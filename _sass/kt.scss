@@ -1,0 +1,111 @@
+$jumbotron-bg: transparent;
+$jumbotron-padding: 3rem;
+$font-family-sans-serif: 'Shadows Into Light Two', cursive;
+$font-size-base: 1.5rem;
+
+$nav-link-padding-y: 1rem;
+$nav-link-padding-x: 2rem;
+$navbar-nav-link-padding-x: $nav-link-padding-x;
+$navbar-padding-y: 0;
+
+@import "bootstrap/bootstrap";
+
+#contentWrapper {
+  margin-top: 80px;
+}
+
+.jumbotron {
+  margin-bottom:0;
+  position: relative;
+  overflow: hidden;
+  h1 {
+    a {
+      color: $body-color;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .background {
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+  }
+
+  #dandelion {
+    img {
+      position: absolute;
+      &.flower {
+        left: 10vw;
+        bottom: 0;
+        height: 200px;
+        opacity: 40%;
+        z-index: 2;
+      }
+      @keyframes seed0 {
+        0%   { transform: translateX(0px)   translateY(0)      rotate(25deg);  opacity: 40% }
+        100% { transform: translateX(500px) translateY(0px)    rotate(45deg);  opacity: 0% }
+      }
+      @keyframes seed1 {
+        0%   { transform: translateX(0px)   translateY(0)      rotate(25deg);  opacity: 40% }
+        100% { transform: translateX(500px) translateY(-45px)  rotate(5deg);   opacity: 0% }
+      }
+      @keyframes seed2 {
+        0%   { transform: translateX(0px)   translateY(0)      rotate(25deg);  opacity: 40% }
+        100% { transform: translateX(500px) translateY(-90px)  rotate(-15deg);   opacity: 0% }
+      }
+      &.seed {
+        left: 13.4vw;
+        bottom: 145px;
+        height: 40px;
+        opacity: 40%;
+        transform: rotate(25deg);
+
+        &.seed-p0 { animation: seed0 6s  0s ease-out infinite; }
+        &.seed-p1 { animation: seed1 6s -5s ease-out infinite; }
+        &.seed-p2 { animation: seed2 6s -4s ease-out infinite; }
+        &.seed-p3 { animation: seed0 6s -3s ease-out infinite; }
+        &.seed-p4 { animation: seed1 6s -2s ease-out infinite; }
+        &.seed-p5 { animation: seed2 6s -1s ease-out infinite; }
+      }
+    }
+
+  }
+
+  /**
+   * TODO - rainbow
+  &:after {
+    content: '';
+    position: absolute;
+    width: 10vw;
+    height: 150%;
+    right: 20%;
+    top: -25%;
+    transform: rotate(-22.5deg);
+    $a: 0.5;
+    background: linear-gradient(to right,
+      rgba(red,0),
+      rgba(red, $a),
+      rgba(yellow, $a),
+      rgba(green, $a),
+      rgba(cyan, $a),
+      rgba(blue, $a),
+      rgba(violet, $a),
+      rgba(violet, 0)
+    );
+  }
+  */
+}
+
+.navbar {
+  background: rgba($dark, 0.1);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}

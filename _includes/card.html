@@ -1,0 +1,23 @@
+{% if include.href %}
+<a href="{{ include.href }}" class="{% if include.class %}{{ include.class }}{% else %}col-sm-12{% endif %}">
+{% else %}
+<div class="{% if include.class %}{{ include.class }}{% else %}col-sm-12{% endif %}">
+{% endif %}
+
+  <div class="card bg-light">
+    {% if include.image %}
+      <div class="card-img-top-wrapper"><img class="card-img-top" src="{{ include.image | relative_url }}" alt="{{ include.title }}"></div>
+    {% endif %}
+    <div class="card-body">
+    {% if include.title %}
+      <h5 class="card-title text-center">{{ include.title }}</h5>
+    {% endif %}
+      <p class="card-text text-center">{{ include.content }}</p>
+    </div>
+  </div>
+
+{% if include.href %}
+</a>
+{% else %}
+</div>
+{% endif %}
