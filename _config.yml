@@ -1,5 +1,5 @@
 title: Kate Thompson
-description: Checkout all my kids stories
+description: Childrens author
 google_analytics: 'UA-114389409-1'
 
 kramdown:
@@ -18,17 +18,3 @@ facebook:
 
 webmaster_verifications:
   google: 'HdeJFHWvafIKxmBzAts05S4XQHoCqvLLNZZTS00V-x8'
-
-defaults:
-  -
-    scope:
-      path: "_posts"
-    values:
-      layout: "book"
-  - scope:
-      path: ""
-    values:
-      image:
-        path: /assets/book.png
-        height: 128
-        width: 128
