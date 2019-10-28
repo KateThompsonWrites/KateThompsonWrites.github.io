@@ -1,4 +1,9 @@
-![Kate Thompson](/assets/images/kate-thompson-photo.jpg "Kate Thompson"){: .float-sm-left.mr-sm-4.about-photo}
+<picture class="background">
+  <source srcset="/assets/images/kate-thompson-photo.webp" type="image/webp">
+  <source srcset="/assets/images/kate-thompson-photo.jpg" type="image/jpeg">
+  <img src="/assets/images/kate-thompson-photo.jpg" alt="Kate Thompson" class="float-sm-left pl-0 col-sm-3">
+</picture>
+
 
 Kate Thompson spent much of her childhood immersed in literary adventures, with the occasional brief foray into the real world for snacks. From an early age, she wrote and illustrated her own picture books, and was determined to grow up to be a children’s author (and, potentially, a detective like Nancy Drew). However, somewhere along the line she got waylaid and became, instead, a solicitor, which contained disappointingly little sleuthing and a distinct lack of storytelling.
 
