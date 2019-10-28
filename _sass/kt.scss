@@ -76,22 +76,33 @@ body {
       $dandelion-opacity: 0.3;
       $dandelion-offset-y: -19px;
       &.flower {
-        left: 50px;
         bottom: $dandelion-offset-y;
         height: 200px;
         opacity: $dandelion-opacity;
         z-index: 2;
+        transform-origin: bottom;
+        transform: scale(0.7);
+        left: 10px;
+        @include media-breakpoint-up(md) {
+          transform: scale(1);
+          left: 50px;
+        }
       }
       &.seed {
         $seed-start-rotation: 25deg;
-        left: 107px;
-        bottom: 145px + $dandelion-offset-y;
+        left: 61px;
+        bottom: 96px + $dandelion-offset-y;
         height: 40px;
         opacity: $dandelion-opacity;
-        transform: rotate($seed-start-rotation);
+        transform: rotate($seed-start-rotation) scale(0.6);
         z-index: 4;
+        @include media-breakpoint-up(md) {
+          left: 107px;
+          bottom: 145px + $dandelion-offset-y;
+          transform: rotate($seed-start-rotation);
+        }
 
-        $dist: 1600px; // @TODO - 100%? calc width?
+        $dist: 100vw; // @TODO - 100%? calc width?
         &.seed-animated {
           z-index: 3;
           opacity: 0;
@@ -99,46 +110,57 @@ body {
           $seeds: 15;
           $seed-animation-duration: 15s;
 
-          $seed-animation-y-min: -150px;
-          $seed-animation-y-max:   30px;
+          $seed-animation-y-min: -120px;
+          $seed-animation-y-max:   20px;
           $seed-animation-y-range: $seed-animation-y-max - $seed-animation-y-min;
 
           $seed-animation-rotate-min: -90deg;
           $seed-animation-rotate-max:  180deg;
           $seed-animation-rotate-range: $seed-animation-rotate-max - $seed-animation-rotate-min;
+          $seed-responsive-map: (
+            xs: 0.6,
+            md: 1.0
+          );
 
           @for $i from 0 to $seeds {
             $seed-animation-name: #{"sa_" + $i};
-            @keyframes #{$seed-animation-name} {
-              0% {
-                opacity: 0;
-              }
-              1% {
-                transform: translateX(0px)
-                           translateY(0)
-                           rotate($seed-start-rotation);
-                opacity: $dandelion-opacity;
-              }
+            @each $key, $scale in $seed-responsive-map {
+              @include media-breakpoint-up($key) {
+                @keyframes #{$seed-animation-name} {
+                  0% {
+                    opacity: 0;
+                  }
+                  1% {
+                    transform: translateX(0px)
+                               translateY(0)
+                               rotate($seed-start-rotation)
+                               scale($scale);
+                    opacity: $dandelion-opacity;
+                  }
 
-              25% {
-                transform: translateX($dist / 4)
-                           translateY(#{ $seed-animation-y-min + (random() * $seed-animation-y-range) })
-                           rotate(#{ $seed-animation-rotate-min + (random() * $seed-animation-rotate-range) });
-                opacity: $dandelion-opacity / 4 * 3;
+                  25% {
+                    transform: translateX($dist / 4)
+                               translateY(#{ $seed-animation-y-min + (random() * $seed-animation-y-range) })
+                               rotate(#{ $seed-animation-rotate-min + (random() * $seed-animation-rotate-range) })
+                               scale($scale);
+                    opacity: $dandelion-opacity / 4 * 3;
 
+                  }
+
+                  100% {
+                    transform: translateX($dist)
+                               translateY(#{ $seed-animation-y-min + (random() * $seed-animation-y-range) })
+                               rotate(#{ $seed-animation-rotate-min + (random() * $seed-animation-rotate-range) })
+                               scale($scale);
+                    opacity: 0
+                  }
+                }
+
+                &:nth-of-type(#{$seeds + 'n'} + #{$i}) {
+                  animation: $seed-animation-name $seed-animation-duration -#{$i * (($seed-animation-duration) / $seeds)} linear infinite;
+                  filter: invert(0.5) sepia(1) saturate(5) hue-rotate( #{ $i * (360deg / $seeds) } );
+                }
               }
-
-              100% {
-                transform: translateX($dist)
-                           translateY(#{ $seed-animation-y-min + (random() * $seed-animation-y-range) })
-                           rotate(#{ $seed-animation-rotate-min + (random() * $seed-animation-rotate-range) });
-                opacity: 0
-              }
-            }
-
-            &:nth-of-type(#{$seeds + 'n'} + #{$i}) {
-              animation: $seed-animation-name $seed-animation-duration #{$i * (($seed-animation-duration) / $seeds)} linear infinite;
-              filter: invert(0.5) sepia(1) saturate(5) hue-rotate( #{ $i * (360deg / $seeds) } );
             }
           }
         }
