@@ -143,6 +143,8 @@ footer, .navbar {
   &.collapsing,
   &.show {
     background: $dark;
+    z-index: 5;
+    @extend .navbar-dark;
     .nav-item {
       .nav-link {
         color: $light;
