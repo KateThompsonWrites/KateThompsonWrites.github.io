@@ -33,10 +33,24 @@ body {
   margin-bottom:0;
   position: relative;
   overflow: hidden;
+
+  @include media-breakpoint-down(sm) {
+    min-height: 17rem;
+    padding: 1rem 0 0;
+  }
+
   h1 {
     z-index: 1;
     position: relative;
-    margin: 20px 0 -20px;
+    text-align: center;
+    @extend h2;
+
+    @include media-breakpoint-up(md) {
+      // cant @extend .display-4, so have to re-implement
+      @include font-size($display4-size);
+      font-weight: $display4-weight;
+      line-height: $display-line-height;
+    }
     a {
       color: $body-color;
       &:hover {
@@ -59,10 +73,11 @@ body {
   #dandelion {
     img {
       position: absolute;
-      $dandelion-opacity: 30%;
+      $dandelion-opacity: 0.3;
+      $dandelion-offset-y: -19px;
       &.flower {
         left: 50px;
-        bottom: 0;
+        bottom: $dandelion-offset-y;
         height: 200px;
         opacity: $dandelion-opacity;
         z-index: 2;
@@ -70,7 +85,7 @@ body {
       &.seed {
         $seed-start-rotation: 25deg;
         left: 107px;
-        bottom: 145px;
+        bottom: 145px + $dandelion-offset-y;
         height: 40px;
         opacity: $dandelion-opacity;
         transform: rotate($seed-start-rotation);
@@ -79,12 +94,12 @@ body {
         $dist: 1600px; // @TODO - 100%? calc width?
         &.seed-animated {
           z-index: 3;
-          opacity: 0%;
+          opacity: 0;
 
           $seeds: 15;
           $seed-animation-duration: 15s;
 
-          $seed-animation-y-min: -180px;
+          $seed-animation-y-min: -150px;
           $seed-animation-y-max:   30px;
           $seed-animation-y-range: $seed-animation-y-max - $seed-animation-y-min;
 
@@ -96,7 +111,7 @@ body {
             $seed-animation-name: #{"sa_" + $i};
             @keyframes #{$seed-animation-name} {
               0% {
-                opacity: 0%;
+                opacity: 0;
               }
               1% {
                 transform: translateX(0px)
@@ -105,16 +120,24 @@ body {
                 opacity: $dandelion-opacity;
               }
 
+              25% {
+                transform: translateX($dist / 4)
+                           translateY(#{ $seed-animation-y-min + (random() * $seed-animation-y-range) })
+                           rotate(#{ $seed-animation-rotate-min + (random() * $seed-animation-rotate-range) });
+                opacity: $dandelion-opacity / 4 * 3;
+
+              }
+
               100% {
                 transform: translateX($dist)
                            translateY(#{ $seed-animation-y-min + (random() * $seed-animation-y-range) })
                            rotate(#{ $seed-animation-rotate-min + (random() * $seed-animation-rotate-range) });
-                opacity: 0%
+                opacity: 0
               }
             }
 
             &:nth-of-type(#{$seeds + 'n'} + #{$i}) {
-              animation: $seed-animation-name $seed-animation-duration #{$i * (($seed-animation-duration) / $seeds)} ease-in infinite;
+              animation: $seed-animation-name $seed-animation-duration #{$i * (($seed-animation-duration) / $seeds)} linear infinite;
               filter: invert(0.5) sepia(1) saturate(5) hue-rotate( #{ $i * (360deg / $seeds) } );
             }
           }
@@ -132,16 +155,26 @@ footer, .navbar {
   position: absolute;
   width: 100%;
   bottom: 0;
-  padding: 0 80px;
   transition: all .35s ease;
+
+  @include media-breakpoint-up(md) {
+    padding: 0 80px;
+  }
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
 
   &.collapsing,
   &.collapse:not(.show) {
-    display: flex;
-    height: 56px;
+    display: block;
+    height: 53px;
   }
   &.collapsing,
   &.show {
+    @include media-breakpoint-down(md) {
+      padding-top: 1rem;
+    }
     background: $dark;
     z-index: 5;
     @extend .navbar-dark;
