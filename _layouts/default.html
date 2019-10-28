@@ -64,6 +64,11 @@
           <div class="navbar-collapse">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
+                <a class="nav-link" href="{{ '/' | relative_url }}">
+                  <i class="fas fa-home"></i> Home
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="{{ '/about.html' | relative_url }}">
                   <i class="far fa-address-card"></i> About Me
                 </a>
@@ -88,7 +93,7 @@
       {{ content }}
     </section>
 
-    <footer class="fixed-bottom">
+    <footer>
       <section class="container">
         <p><small>Copyright Kate Thompson {{ 'now' | date: "%Y" }}</small></p>
       </section>
