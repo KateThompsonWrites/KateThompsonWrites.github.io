@@ -4,7 +4,7 @@
   <img src="/assets/images/kate-thompson-photo.jpg" alt="Kate Thompson" class="float-sm-left pl-0 col-lg-3 col-sm-6">
 </picture>
 
-Kate Thompson spent much of her childhood with her nose in books, immersed in literary adventures. From an early age, she wrote and illustrated her own Picture Books, and was determined to become a children’s author (and, potentially, a detective like Nancy Drew). However, Kate got waylaid and became, instead, a solicitor, which contained disappointingly little sleuthing and a distinct lack of storytelling.
+Kate Thompson spent much of her childhood with her nose in books, immersed in literary adventures. From an early age, she wrote and illustrated her own Picture Books, and was determined to become a children’s author (and, potentially, a detective like Nancy Drew). However, somewhere along the way Kate got waylaid and became, instead, a solicitor, which contained disappointingly little sleuthing and a distinct lack of storytelling.
 
 Happily, following the birth of her sons, Kate rediscovered her passion for Picture Books and writing.
 
