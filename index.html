@@ -4,9 +4,51 @@ layout: default
 
 <div class="row">
   <div class="col-md-6">
-    <a class="twitter-timeline" data-lang="en" data-link-color="#007bff" href="https://twitter.com/writes_kate?ref_src=twsrc%5Etfw">Tweets by writes_kate</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div id="twitter_timeline"></div>
+    <script>
+      window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+
+        return t;
+      }(document, "script", "twitter-wjs"));
+
+      window.twttr.ready(function(twttr) {
+        twttr.widgets.createTimeline({
+          sourceType: 'profile',
+          screenName: 'writes_kate'
+        },
+        document.getElementById('twitter_timeline'),
+        {
+          chrome: 'nofooter noborders transparent noscrollbar',
+          tweetLimit: 3
+        }).then(function (el) {
+          console.log('Embedded a timeline.')
+        });
+      })
+    </script>
   </div>
+
+
   <div class="col-md-6">
+    <div id="instagram_timeline">
+      <script>
+        (function($) {
+          $.getJSON('https://www.instagram.com/katethompsonwrites/?__a=1')
+            .then(function(){ {
+              console.log(arguments);
+            }});
+        })(jQuery);
+      </script>
+    </div>
   </div>
 </div>
