@@ -3,52 +3,13 @@ layout: default
 ---
 
 <div class="row">
-  <div class="col-md-6">
-    <div id="twitter_timeline"></div>
-    <script>
-      window.twttr = (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
-        if (d.getElementById(id)) return t;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
+  <div class="col-md-8 offset-md-2">
+    <p>Kate&apos;s Debut Picture Book, &lsquo;Superheroes Don&apos;t Get Scared&rsquo;, is to be illustrated by <a href="https://www.elsomillustration.co.uk/">Clare Elsom</a> and published in September 2020 by <a href="http://www.triggerpublishing.com/about-us/">Upside Down Books</a>, a new imprint of <a href="http://www.triggerpublishing.com/">Trigger Publishing</a>.</p>
 
-        t._e = [];
-        t.ready = function(f) {
-          t._e.push(f);
-        };
+    <p class="m-4 p-4 border"><strong><em>&ldquo;Scared Maisie Brown dreams of being a fearless superhero - because they never get frightened, right? But when Dad explains that even the strongest, boldest and bravest hero can sometimes feel afraid, and that that&apos;s perfectly fine, Maisie realises that being a superhero is in us all. With fun characters, rhyming text and an awesome message all about normalising fear and realising inner powers, this book is an amazing addition to any little hero&apos;s bookshelf.&rdquo;</em></strong></p>
 
-        return t;
-      }(document, "script", "twitter-wjs"));
+    <blockquote>&ldquo;This is an encouraging, heartwarming and funny book, with an important message at its core. Children idolise their heroes, so what could be more comforting than to discover they experience the very same fears, doubts, and worries? Kate Thompson&apos;s rhyming text sings and practically leaps off the page. And with the super-talented Clare Elsom signed on to illustrate, we have a dynamic duo bringing this exciting story to young readers.&rdquo;
+    <footer class="blockquote-footer">Alli Brydon, Children&apos;s Commissioning Editor, <cite title="Source Title">Upside Down Books</cite></footer></blockquote>
 
-      window.twttr.ready(function(twttr) {
-        twttr.widgets.createTimeline({
-          sourceType: 'profile',
-          screenName: 'writes_kate'
-        },
-        document.getElementById('twitter_timeline'),
-        {
-          chrome: 'nofooter noborders transparent noscrollbar',
-          tweetLimit: 3
-        }).then(function (el) {
-          console.log('Embedded a timeline.')
-        });
-      })
-    </script>
-  </div>
-
-
-  <div class="col-md-6">
-    <div id="instagram_timeline">
-      <script>
-        (function($) {
-          $.getJSON('https://www.instagram.com/katethompsonwrites/?__a=1')
-            .then(function(){ {
-              console.log(arguments);
-            }});
-        })(jQuery);
-      </script>
-    </div>
-  </div>
-</div>
+    <p class="text-center">More details coming soon!</p>
+</div></div>

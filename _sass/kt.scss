@@ -14,7 +14,7 @@ html {
   background: #f8f8f8;
 }
 
-footer, body {
+footer.site-footer, body {
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -172,7 +172,7 @@ body {
   }
 }
 
-footer {
+footer.site-footer {
   background: $gray-200;
   border: 1px solid $gray-400;
   position: absolute;
@@ -240,6 +240,6 @@ footer {
   }
 }
 
-p {
+blockquote, p {
   text-align: justify;
 }
