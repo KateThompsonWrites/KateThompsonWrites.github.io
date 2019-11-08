@@ -15,7 +15,7 @@ html {
 }
 
 footer.site-footer, body {
-  max-width: 1600px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -26,6 +26,9 @@ body {
   box-shadow: 0 0 2vw rgba(0,0,0, 0.05);
   position: relative;
   padding-bottom: 3rem;
+  @include media-breakpoint-down(sm) {
+    font-size: 1.3em;
+  }
 }
 
 #contentWrapper {
@@ -36,6 +39,9 @@ body {
   margin-bottom:0;
   position: relative;
   overflow: hidden;
+  @include media-breakpoint-up(sm) {
+    padding: 2rem 0 6rem;
+  }
 
   @include media-breakpoint-down(sm) {
     min-height: 14rem;
@@ -43,23 +49,36 @@ body {
   }
 
   h1 {
-    z-index: 1;
+    z-index: 5;
     position: relative;
     text-align: center;
-    @extend h2;
+    font-size: 2em;
 
     @include media-breakpoint-up(md) {
-      // cant @extend .display-4, so have to re-implement
-      @include font-size($display4-size);
+      font-size: 5em;
       font-weight: $display4-weight;
       line-height: $display-line-height;
     }
+
+    @include media-breakpoint-up(sm) {
+      font-size: 3em;
+    }
+
     a {
       color: $body-color;
       &:hover {
         text-decoration: none;
       }
     }
+  }
+
+  p.lead {
+    z-index: 5;
+    position: relative;
+    text-align: center;
+    font-family: $headings-font-family;
+    font-size: 1em;
+    color: rgba(0,0,0, 0.4);
   }
   .background {
     img {
@@ -76,7 +95,7 @@ body {
   #dandelion {
     img {
       position: absolute;
-      $dandelion-opacity: 0.3;
+      $dandelion-opacity: 0.75;
       $dandelion-offset-y: -19px;
       &.flower {
         bottom: $dandelion-offset-y;
@@ -86,6 +105,7 @@ body {
         transform-origin: bottom;
         transform: scale(0.7);
         left: 10px;
+        filter: invert(0.5) sepia(1) saturate(40) hue-rotate(200deg);
         @include media-breakpoint-up(md) {
           transform: scale(1);
           left: 50px;
@@ -99,13 +119,14 @@ body {
         opacity: $dandelion-opacity;
         transform: rotate($seed-start-rotation) scale(0.6);
         z-index: 4;
+        filter: invert(0.5) sepia(1) saturate(40) hue-rotate(200deg);
         @include media-breakpoint-up(md) {
           left: 107px;
           bottom: 145px + $dandelion-offset-y;
           transform: rotate($seed-start-rotation);
         }
 
-        $dist: 100vw; // @TODO - 100%? calc width?
+        $dist: 1024px;
         &.seed-animated {
           z-index: 3;
           opacity: 0;
@@ -175,6 +196,7 @@ body {
 footer.site-footer {
   background: $gray-200;
   border: 1px solid $gray-400;
+  border-width: 1px 0;
   position: absolute;
   bottom: 0;
   width: 100%;
