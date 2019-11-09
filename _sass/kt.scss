@@ -11,28 +11,31 @@ $navbar-padding-y: 0;
 @import "bootstrap/bootstrap";
 
 html {
-  background: #f8f8f8;
-}
-
-footer.site-footer, body {
-  max-width: 1024px;
-  margin: 0 auto;
+  background: #ECE9E0;
+  background-size: cover;
+  &.no-js, &.no-webp {
+    background-image: url(/assets/images/ivory-off-white-paper-texture.jpg);
+  }
+  &.webp {
+    background-image: url(/assets/images/ivory-off-white-paper-texture.webp);
+  }
 }
 
 body {
   min-height: 100vh;
-  border: 1px solid $gray-400;
-  border-width: 0 1px;
-  box-shadow: 0 0 2vw rgba(0,0,0, 0.05);
   position: relative;
   padding-bottom: 3rem;
+  background: transparent;
   @include media-breakpoint-down(sm) {
     font-size: 1.3em;
   }
 }
 
 #contentWrapper {
-  margin-top: 80px;
+  padding-top: 2em;
+  background: white;
+  box-shadow: 0 0 2vw rgba(0,0,0, 0.05);
+  max-width: 1024px;
 }
 
 .jumbotron {
@@ -108,7 +111,7 @@ body {
         filter: invert(0.5) sepia(1) saturate(40) hue-rotate(200deg);
         @include media-breakpoint-up(md) {
           transform: scale(1);
-          left: 50px;
+          left: 0px;
         }
       }
       &.seed {
@@ -121,7 +124,7 @@ body {
         z-index: 4;
         filter: invert(0.5) sepia(1) saturate(40) hue-rotate(200deg);
         @include media-breakpoint-up(md) {
-          left: 107px;
+          left: 57px;
           bottom: 145px + $dandelion-offset-y;
           transform: rotate($seed-start-rotation);
         }
@@ -192,13 +195,11 @@ body {
     }
   }
 }
-
+body > header {
+  position: relative;
+}
 footer.site-footer {
-  background: $gray-200;
-  border: 1px solid $gray-400;
-  border-width: 1px 0;
-  position: absolute;
-  bottom: 0;
+  background: $gray-100;
   width: 100%;
   padding: 0.25rem 0;
   p:last-child {
@@ -208,11 +209,25 @@ footer.site-footer {
 
 .navbar {
   background: rgba($dark, 0.1);
-  position: absolute;
   width: 100%;
-  bottom: 0;
   transition: all .35s ease;
   font-family: $headings-font-family;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  height: 15rem;
+
+  .nav-link {
+    .svg-inline--fa {
+      transition: color .35s ease;
+    }
+    &:hover {
+      .fa-twitter      { color: #1DA1F2; }
+      .fa-instagram    { color: #E4405F; }
+      .fa-home         { color: #579DFB; }
+      .fa-address-card { color: #aa00ff; }
+    }
+  }
 
   @include media-breakpoint-up(lg) {
     .navbar-nav {
@@ -238,9 +253,6 @@ footer.site-footer {
   }
   &.collapsing,
   &.show {
-    @include media-breakpoint-down(md) {
-      padding-top: 1rem;
-    }
     background: $dark;
     z-index: 5;
     @extend .navbar-dark;
