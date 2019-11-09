@@ -1,5 +1,5 @@
 title: Kate Thompson
-description: Childrens author
+description: Children's picture book author that lives by the sea. Debut book, Superheros Dont Get Scared.
 google_analytics: 'UA-114389409-1'
 
 kramdown:
@@ -19,9 +19,6 @@ facebook:
 twitter:
   card: summary_large_image
   username: writes_kate
-
-webmaster_verifications:
-  google: 'HdeJFHWvafIKxmBzAts05S4XQHoCqvLLNZZTS00V-x8'
 
 defaults:
   - scope:

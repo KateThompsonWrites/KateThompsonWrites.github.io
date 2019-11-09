@@ -1,3 +1,7 @@
+---
+layout: default
+date: 2019-11-09 17:00:00 +0000
+---
 <picture class="background">
   <source srcset="/assets/images/kate-thompson-photo.webp" type="image/webp">
   <source srcset="/assets/images/kate-thompson-photo.jpg" type="image/jpeg">
