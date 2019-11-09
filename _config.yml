@@ -10,6 +10,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+webmaster_verifications:
+  bing: 1C1F65F5CC4A6CF274E48F16CCF9B346
+
 author: Kate Thompson
 publisher: Kate Thompson
 
