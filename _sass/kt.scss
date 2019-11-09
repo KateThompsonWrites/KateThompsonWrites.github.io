@@ -216,16 +216,27 @@ footer.site-footer {
   bottom: 0;
   overflow: hidden;
   height: 15rem;
+  &.position-fixed {
+    top: 0;
+    z-index: 10;
+    background: rgba(33, 37, 41, 0.8);
+    .nav-link {
+      color: rgba(255, 255, 255, 0.8);
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
 
   .nav-link {
     .svg-inline--fa {
       transition: color .35s ease;
     }
     &:hover {
+      .fa-home         { color: #579DFB; }
+      .fa-address-card { color: #cc66ff; }
       .fa-twitter      { color: #1DA1F2; }
       .fa-instagram    { color: #E4405F; }
-      .fa-home         { color: #579DFB; }
-      .fa-address-card { color: #aa00ff; }
     }
   }
 
