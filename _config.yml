@@ -18,3 +18,9 @@ facebook:
 
 webmaster_verifications:
   google: 'HdeJFHWvafIKxmBzAts05S4XQHoCqvLLNZZTS00V-x8'
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/ogimage.png
