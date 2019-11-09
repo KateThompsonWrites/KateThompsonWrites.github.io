@@ -8,6 +8,7 @@ kramdown:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 author: Kate Thompson
 publisher: Kate Thompson
