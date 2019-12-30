@@ -1,5 +1,5 @@
-$jumbotron-bg: transparent;
-$jumbotron-padding: 3rem;
+$jumbotron-bg: white;
+$jumbotron-padding: 0;
 $headings-font-family: 'Shadows Into Light Two', cursive;
 $font-family-sans-serif: 'Lato', sans-serif;
 $font-size-base: 1.5rem;
@@ -12,13 +12,6 @@ $navbar-padding-y: 0;
 
 html {
   background: #ECE9E0;
-  background-size: cover;
-  &.no-js, &.no-webp {
-    background-image: url(/assets/images/ivory-off-white-paper-texture.jpg);
-  }
-  &.webp {
-    background-image: url(/assets/images/ivory-off-white-paper-texture.webp);
-  }
 }
 
 body {
@@ -35,38 +28,30 @@ body {
   padding-top: 2em;
   background: white;
   box-shadow: 0 0 2vw rgba(0,0,0, 0.05);
-  max-width: 1024px;
 }
 
 .jumbotron {
-  margin-bottom:0;
-  position: relative;
-  overflow: hidden;
-  @include media-breakpoint-up(sm) {
-    padding: 2rem 0 6rem;
-  }
-
-  @include media-breakpoint-down(sm) {
-    min-height: 14rem;
-    padding: 1rem 0 0;
-  }
-
-  h1 {
-    z-index: 5;
+  padding-bottom: 53px;
+  .container {
+    min-height: 360px;
     position: relative;
-    text-align: center;
-    font-size: 2em;
-
-    @include media-breakpoint-up(md) {
-      font-size: 5em;
-      font-weight: $display4-weight;
-      line-height: $display-line-height;
+    #book_and_stars,
+    .site-info {
+      position: absolute;
+      bottom: 0;
     }
-
-    @include media-breakpoint-up(sm) {
-      font-size: 3em;
+    #book_and_stars {
+      width: 570px;
+      right: 0;
     }
-
+    .site-info {
+      left: 0;
+    }
+  }
+  h1 {
+    font-size: 4rem;
+    padding: 0 0 2rem;
+    margin: 0;
     a {
       color: $body-color;
       &:hover {
@@ -74,24 +59,48 @@ body {
       }
     }
   }
-
   p.lead {
-    z-index: 5;
-    position: relative;
-    text-align: center;
     font-family: $headings-font-family;
     font-size: 1em;
     color: rgba(0,0,0, 0.4);
   }
-  .background {
-    img {
+}
+
+@keyframes starPath {
+  0%   { transform: translate(192px, -22px)  scale(0.00) rotate(0);      opacity: 0.0; }
+  25%  { transform: translate(195px, -55px)  scale(0.03) rotate(180deg); opacity: 1.0; }
+  50%  { transform: translate(190px, -140px) scale(0.30) rotate(360deg); }
+  75%  { transform: translate(340px, -210px) scale(0.40) rotate(540deg); opacity: 1.0; }
+  100% { transform: translate(380px, -290px) scale(0.50) rotate(720deg); opacity: 0.0; }
+}
+
+#book_and_stars {
+  img {
+    max-width: 100%;
+  }
+  .book {
+  }
+  .star {
       position: absolute;
       left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;
+      bottom: 0;
+      animation:starPath 4s linear infinite;
+      transform-origin: 59.25% 47.32%;
+
+    &.star-1 {
+      animation-delay: 0s;
+    }
+
+    &.star-2 {
+      animation-delay: -1s;
+    }
+
+    &.star-3 {
+      animation-delay: -2s;
+    }
+
+    &.star-4 {
+      animation-delay: -3s;
     }
   }
 }
