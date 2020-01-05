@@ -33,30 +33,41 @@ body {
 .jumbotron {
   padding-bottom: 53px;
   .container {
-    min-height: 400px;
-    @include media-breakpoint-up(md) {
-      min-height: 360px;
-    }
+    min-height: 270px;
     position: relative;
+    .site-info {
+      left: 0;
+    }
+    @include media-breakpoint-up(sm) {
+      min-height: 400px;
+    }
     @include media-breakpoint-up(md) {
+      min-height: 230px;
       .site-info {
         position: absolute;
         bottom: 0;
       }
     }
+    @include media-breakpoint-up(lg) {
+      min-height: 300px;
+    }
+    @include media-breakpoint-up(xl) {
+      min-height: 360px;
+    }
     #book_and_stars {
       position: absolute;
       width: 100%;
-      right: 0;
-      bottom: 0;
-    }
-    .site-info {
-      left: 0;
+      right: 20px;
+      bottom: 10px;
     }
   }
   h1 {
-    font-size: 4rem;
-    padding: 0 0 2rem;
+    font-size: 3rem;
+    padding: 0 0 1rem;
+    @include media-breakpoint-up(sm) {
+      font-size: 4rem;
+      padding: 0 0 2rem;
+    }
     margin: 0;
     a {
       color: $body-color;
@@ -67,8 +78,11 @@ body {
   }
   p.lead {
     font-family: $headings-font-family;
-    font-size: 1em;
     color: rgba(0,0,0, 0.4);
+    font-size: 1em;
+    @include media-breakpoint-up(sm) {
+      font-size: 1em;
+    }
   }
 }
 
@@ -153,19 +167,19 @@ $star-rotation: 360deg;
 #book_and_stars {
   .inner-wrapper {
     transform-origin: bottom right;
-    transform: scale((320 / 1140));
+    transform: scale((280 / 1140));
     position: relative;
     @include media-breakpoint-up(sm) {
-      transform: scale(strip-units(get-width-for-breakpoint('sm') / 1140));
+      transform: scale(strip-units((get-width-for-breakpoint('sm') - 20px) / 1140));
     }
     @include media-breakpoint-up(md) {
-      transform: scale(strip-units(get-width-for-breakpoint('md') / 2 / 1140));
+      transform: scale(strip-units((get-width-for-breakpoint('md') - 20px) / 2 / 1140));
     }
     @include media-breakpoint-up(lg) {
-      transform: scale(strip-units(get-width-for-breakpoint('lg') / 2 / 1140));
+      transform: scale(strip-units((get-width-for-breakpoint('lg') - 20px) / 2 / 1140));
     }
     @include media-breakpoint-up(xl) {
-      transform: scale(strip-units(get-width-for-breakpoint('xl') / 2 / 1140));
+      transform: scale(strip-units((get-width-for-breakpoint('xl') - 20px) / 2 / 1140));
     }
 
   }
@@ -238,7 +252,6 @@ footer.site-footer {
   position: absolute;
   bottom: 0;
   overflow: hidden;
-  height: 15rem;
   &.position-fixed {
     top: 0;
     z-index: 10;
@@ -287,14 +300,14 @@ footer.site-footer {
   }
   &.collapsing,
   &.show {
-    background: $dark;
+    background: transparentize($dark, 0.1);
     z-index: 5;
     @extend .navbar-dark;
     .nav-item {
       .nav-link {
         color: $light;
         @include media-breakpoint-down(md) {
-          font-size: 1.2rem;
+          font-size: 1.5rem;
           padding: 0.4rem 0;
         }
       }
