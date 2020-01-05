@@ -254,6 +254,7 @@ footer.site-footer {
   overflow: hidden;
   &.position-fixed {
     top: 0;
+    bottom: auto;
     z-index: 10;
     background: rgba(33, 37, 41, 0.8);
     .nav-link {
