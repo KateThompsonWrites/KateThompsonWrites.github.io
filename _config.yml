@@ -27,4 +27,4 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/ogimage.png
+      image: /assets/images/ogimage.png?20200105
