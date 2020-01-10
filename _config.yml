@@ -2,6 +2,8 @@ title: Kate Thompson
 description: Picture Book Author who lives in West Sussex by the sea.
 google_analytics: 'UA-114389409-1'
 
+permalink: /blog/:year-:month-:day/:title:output_ext
+
 kramdown:
   # Disable auto-generated ID's for headings
   auto_ids: false

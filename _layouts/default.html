@@ -23,7 +23,7 @@
     <meta name="msapplication-TileColor" content="#eae7dd">
     <meta name="theme-color" content="#eae7dd">
   </head>
-  <body>
+  <body {% if page.page_id != null %}id="{{ page.page_id }}"{% endif %}>
     <header>
       <div class="jumbotron">
         <div class="container">
@@ -104,6 +104,11 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="{{ '/blog' | relative_url }}">
+                  <i class="far fa-comments"></i> Blog
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="https://twitter.com/writes_kate">
                   <i class="fab fa-twitter"></i> Twitter
                 </a>
@@ -119,13 +124,8 @@
       </nav>
     </header>
 
-    <section class="container" id="contentWrapper">
+    <section class="main-content">
       {{ content }}
-
-      <div class="row">
-      <footer class="site-footer">
-        <p class="container text-right text-muted"><small>Copyright Kate Thompson {{ 'now' | date: "%Y" }}</small></p>
-      </footer>
     </section>
 
     <script type="text/javascript">
