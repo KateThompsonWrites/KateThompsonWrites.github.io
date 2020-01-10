@@ -21,7 +21,7 @@ _If you are an aspiring children’s writer, consider undertaking a writing cour
 
 ## 3.  Society of Children’s Book Writers and Illustrators (SCBWI)
 
-I invested in a SCBWI membership. Through SCBWI I attended the London Picture Book Day and the annual SCBWI Conference. I have also joined a SCBWI e-critique group, and joined my local SCBWI social group. In a few weeks I’m attending a SCWBI Debut Author Boot Camp, to help me make the most of my debut year.
+I invested in a SCBWI membership. Through SCBWI I attended the London Picture Book Day and the annual SCBWI Conference. I have also joined a SCBWI e-critique group, and joined my local SCBWI social group. In a few weeks I’m attending a SCBWI Debut Author Boot Camp, to help me make the most of my debut year.
 
 _I recommend joining SCBWI if you can afford to. It has provided me with a vital connection to the rest of the industry. I’ve also been told that SCBWI membership is something that publishers and agents like to see!_
 
