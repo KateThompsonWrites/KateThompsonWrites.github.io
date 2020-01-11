@@ -1,8 +1,8 @@
+{% include social.html url=page.url text=page.title %}
 <footer class="site-footer row text-muted px-2 justify-content-between">
-
   {% if page.date %}
   <small class="float-left mt-1">{{ page.date | date_to_long_string }}</small>
   {% endif %}
 
-  <small class="ml-auto">Copyright Kate Thompson {{ 'now' | date: "%Y" }}</small>
+  <small class="ml-auto">&copy; Copyright Kate Thompson {{ 'now' | date: "%Y" }}</small>
 </footer>

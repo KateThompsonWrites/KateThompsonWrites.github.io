@@ -43,4 +43,4 @@ My debut authored picture book, _Superheroes Don’t Get Scared_, will be illust
 
 9.  I hate dancing at proper parties, but love having silly dance parties at home with my children. We put on silly dance clothes and boogie away. I’m the queen of mum dancing!
 
-10. I have a habit of doing something clumsy on my birthday. Birthday mishaps have included: slipped over in sheep poo, crashing my bike into brambles, and setting my hair on fire while blowing out my candles!
+10. I have a habit of doing something clumsy on my birthday. Birthday mishaps have included: slipping over in sheep poo, crashing my bike into brambles, and setting my hair on fire while blowing out my candles!
