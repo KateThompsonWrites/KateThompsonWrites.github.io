@@ -16,7 +16,7 @@ I am a picture book author, but first and foremost I am a parent. In my experien
 
 With younger children, this is where picture books can be invaluable. We live in a real golden era of children’s literature. In any given book shop or library, you will find a treasure trove of high-quality picture books, many of which address serious issues in a sensitive and child-friendly way.
 
-Over the next few years, we are likely to see a huge increase in the number of children’s books focussed upon mental health and emotional wellness. In fact, my debut picture book, Superheroes Don’t Get Scared, is being published by a brand-new publishing imprint, Ups¡de Down Books, which has been set-up specifically to produce high-quality children’s books focussing on mental health and wellness issues.
+Over the next few years, we are likely to see a huge increase in the number of children’s books focussed upon mental health and emotional wellness. In fact, my debut picture book, _Superheroes Don’t Get Scared_, is being published by a brand-new publishing imprint, Ups¡de Down Books, which has been set-up specifically to produce high-quality children’s books focussing on mental health and wellness issues.
 
 These stories help children to see that they are not alone in feeling frightened, that other children (or, in some cases, dinosaurs and superheroes!) feel scared too. This is not only incredibly reassuring for children, but it provides their grown-ups with an opportunity to talk with them about the issues raised in the story.
 
