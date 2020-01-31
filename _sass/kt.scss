@@ -16,6 +16,7 @@ $headings-margin-bottom:      $spacer / 2;
 $headings-font-family:        'Shadows Into Light Two', cursive;
 $font-family-sans-serif:      'Lato', sans-serif;
 
+$hr-margin-y: $spacer * 2;
 
 @import "bootstrap/bootstrap";
 
@@ -37,7 +38,10 @@ body {
   background: white;
   box-shadow: 0 0 2vw rgba(0,0,0, 0.05);
   &:first-child {
-    padding-top: 2em;
+    padding-top: 2em !important;
+  }
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -340,6 +344,7 @@ h2 a {
   color: $body-color;
 }
 
+p + h3,
 p + h2 {
   margin-top: $spacer * 2;
 }
