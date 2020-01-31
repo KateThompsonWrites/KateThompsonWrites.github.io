@@ -31,8 +31,9 @@ Place2Be has some useful conversation tips on their [website](https://www.childr
 
 Why not cosy up with your favourite ‘brave’ picture book and give them a go?
 
+---
 
-### Additional Information
+## Additional Information
 
 Additional information about Children’s Mental Health Week can be found here: [Place2Be](https://www.childrensmentalhealthweek.org.uk/)
 
