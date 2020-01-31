@@ -3,9 +3,9 @@ layout: wrapped
 title: 'Find Your Brave!'
 ---
 
-This week is Children’s Mental Health Week. It has been set up by the children’s mental health charity, Place2Be, with the theme ‘Find Your Brave’.
+Next week is Children’s Mental Health Week. It has been set up by the children’s mental health charity, Place2Be, with the theme ‘Find Your Brave’.
 
-Never has it been more important for us to focus on and take care of children’s mental health. According to research carried out last year by [Place2Be](https://www.childrensmentalhealthweek.org.uk/news/research-children-with-less-sleep-are-more-likely-to-struggle-with-worries/), “56% of children and young people say they worry “all the time” about at least one thing to do with their school life, home life or themselves”.
+Never has it been more important for us to focus on and take care of children’s mental health. According to research carried out last year by [Place2Be](https://www.childrensmentalhealthweek.org.uk/news/research-children-with-less-sleep-are-more-likely-to-struggle-with-worries/), _“56% of children and young people say they worry “all the time” about at least one thing to do with their school life, home life or themselves”_.
 
 ## But what can we do to help them ‘find their brave’?
 
@@ -34,17 +34,11 @@ Why not cosy up with your favourite ‘brave’ picture book and give them a go?
 
 ### Additional Information
 
-Additional information about Children’s Mental Health Week can be found here:
+Additional information about Children’s Mental Health Week can be found here: [Place2Be](https://www.childrensmentalhealthweek.org.uk/)
 
-https://www.childrensmentalhealthweek.org.uk/
+Additional information about Ups!de Down Books and Trigger Publishing can be found here: [Trigger Publishing](http://www.triggerpublishing.com/about-us/)
 
-Additional information about Ups!de Down Books and Trigger Publishing can be found here:
-
-http://www.triggerpublishing.com/about-us/
-
-Proceeds from all Trigger Publishing and Ups¡de Down Books go directly to The Shaw Mind Foundation, a global charity that focuses entirely on mental health. Additional advice can be found on their website:
-
-https://shawmindfoundation.org/support/
+Proceeds from all Trigger Publishing and Ups¡de Down Books go directly to The Shaw Mind Foundation, a global charity that focuses entirely on mental health. Additional advice can be found on their website: [Shaw Mind Foundation](https://shawmindfoundation.org/support/)
 
 
 {: .text-center}
