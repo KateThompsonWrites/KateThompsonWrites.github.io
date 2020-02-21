@@ -3,14 +3,16 @@ layout: wrapped
 title: 'What Happens After You Get A Picture Book Deal?'
 ---
 
-You refresh your inbox for what seems like the hundredth time that day, and an email appears. But this is not just any email; this email is from a publisher you submitted to months ago. Immediately, your stomach flips, your heart thumps and you hold your breath, bracing yourself to read yet another rejection. Wincing, you open the email, scanning its contents for the words *‘sorry’*, *‘unfortunately’*, *‘not a good fit’*… but to your amazement they are not there. Instead, the words *‘we would love to make you an offer’* leap off the page! It’s finally happened! The moment you have been dreaming of! But what happens next? 
+You refresh your inbox for what seems like the hundredth time that day, and an email appears. But this is not just any email; this email is from a publisher you submitted to months ago.
+
+Immediately, your stomach flips, your heart thumps and you hold your breath, bracing yourself to read yet another rejection. Wincing, you open the email, scanning its contents for the words _‘sorry’_, _‘unfortunately’_, _‘not a good fit’_… but to your amazement they are not there. Instead, the words _‘we would love to make you an offer’_ leap off the page! It’s finally happened! The moment you have been dreaming of! But what happens next? 
 
 
 ## Prepare yourself for a rollercoaster of emotions!
 
 I can, of course, only speak for myself, but my emotional reaction to the news went something along the following lines:
 
-1. Disbelief. I struggle with low self-confidence, so even though I was immensely proud of *Superheroes Don’t Get Scared* and knew it was special, I still could not quite believe that an actual publisher wanted to make it into a book! I re-read the email over and over to check for any trickery, but it really was an offer of a traditional publishing contract with a proper publisher (in fact, my dream publisher for this particular book!)
+1. Disbelief. I struggle with low self-confidence, so even though I was immensely proud of _Superheroes Don’t Get Scared_ and knew it was special, I still could not quite believe that an actual publisher wanted to make it into a book! I re-read the email over and over to check for any trickery, but it really was an offer of a traditional publishing contract with a proper publisher (in fact, my dream publisher for this particular book!)
 2. Pure joy. Happy dance time! My joy exponentially increased when I told my children the news and saw their faces light up! Enjoy this moment – you really do deserve it!
 3. Fear. At some point after receiving the contract (more on this below), the reality really sunk in: I was going to be a published author. Exciting? Definitely. But, also big, new and scary. Publishing is most definitely a business. What had I got myself in for? What if the book didn’t turn out like I had imagined? What if no-one liked it? What if I turned out to be no good at all the other things that an author has to do to be successful? 
 4. Determination. I faced my fear (ironically one of the themes of my picture book) and embraced the steep learning curve ahead of me. I was determined to do all I could to make the book a success, and most importantly, to enjoy the process! 
