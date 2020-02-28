@@ -1,4 +1,7 @@
-<p align="center"> #The Valentiny Writing Contest# </p>
+---
+layout: wrapped
+title: 'The Valentiny Writing Contest'
+---
 
 I’ve not had much time to write recently due to family commitments, so when I saw that [Susanna Hill] (https://susannahill.com/2020/02/12/whats-in-your-heart-the-5th-annual-valentiny-writing-contest/) was running a Valentiny Writing Contest, I really wanted to take part. 
 
