@@ -16,7 +16,7 @@ But what to do when all your creativity seems to have disappeared?
 
 We are so fortunate to have a wealth of technology available to keep us connected with other people, even though we are socially segregated. Write, telephone, message, or video call your friends and family. Stay connected, share experiences and laugh together. If you are feeling low, talk to someone. 
 
-The writing community on social media is still as active as ever. Twitter is full of fellow writers sharing their own experiences. Over the law few days, I have read countless tweets from writers saying that writing, and even reading, seems too difficult at the moment. So, if this is something you are suffering with, know that you are not alone. 
+The writing community on social media is still as active as ever. Twitter is full of fellow writers sharing their own experiences. Over the last few days, I have read countless tweets from writers saying that writing, and even reading, seems too difficult at the moment. So, if this is something you are suffering with, know that you are not alone. 
 
 ## 2.	Read more
 
