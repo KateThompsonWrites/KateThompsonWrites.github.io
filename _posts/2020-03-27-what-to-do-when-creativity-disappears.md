@@ -20,7 +20,7 @@ The writing community on social media is still as active as ever. Twitter is ful
 
 ## 2.	Read more
 
-If writing seems too difficult, re-focus on reading (if that seem right for you). Be kind to yourself and be flexible about your choice of books. Your world has gone through a major shift, so the books you enjoyed two weeks ago may no longer feel ‘right’. 
+If writing seems too difficult, try re-focussing on reading (if that feels right for you). Be kind to yourself and be flexible about your choice of books. Your world has gone through a major shift, so the books you enjoyed two weeks ago may no longer feel ‘right’. 
 
 ## 3.	Keep a diary 
 
